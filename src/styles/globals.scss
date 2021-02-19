@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap');
-// variables
-// colors
-$peach: #e7816b;
-$black: #1d1c1e;
-$white: #fff;
-$lightPeach: #ffad9b;
-$darkGrey: #333136;
-$lightGrey: #f1f3f5;
+@import './variables';
 
-// font
-$fontType: 'Jost',
-sans-serif;
+.container {
+  padding: 0 1.5rem;
 
-// layout
-$mediumViewport: 48rem;
+  @media screen and (min-width: $mediumViewport) {
+    padding: 0 2.5rem;
+  }
+
+  @media screen and (min-width: $largeViewport) {
+    width: 70rem;
+    margin: auto;
+    padding: 0;
+  }
+  }
 
 // global styles
 *,
@@ -75,6 +75,13 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
 
 .btn {
   border: none;
@@ -95,6 +102,7 @@ a {
   }
 }
 
+// modifiers
 .btn--primary {
   color: $darkGrey;
   background: $white;
@@ -103,4 +111,20 @@ a {
 .btn--secondary {
   color: $white;
   background: $peach;
+}
+
+.active {
+  font-weight: 500;
+  position: relative;
+
+  &::after {
+    background: linear-gradient(90deg, $lightPeach, $peach);
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 0.5rem;
+  }
 }
