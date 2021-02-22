@@ -68,6 +68,7 @@ h3 {
   font-size: 1.25rem;
   line-height: 1.625rem;
   letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
 a {
@@ -127,4 +128,16 @@ ul {
     height: 3px;
     border-radius: 0.5rem;
   }
+}
+
+.canada_bg {
+  background: linear-gradient(to top, $locationImgBg);
+}
+
+.australia_bg {
+  background: linear-gradient(to left, $locationImgBg);
+}
+
+.uk_bg {
+  background: linear-gradient(to bottom, $locationImgBg);
 }

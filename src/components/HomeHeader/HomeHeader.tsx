@@ -13,7 +13,11 @@ const HomeHeader = () => {
           fully responsive websites, apps, and engaging brand experiences. Find
           out more about our services.
         </p>
-        <Button label='Learn more' link='/about' buttonClass='btn' />
+        <Button
+          label='Learn more'
+          link='/about'
+          buttonClass='btn btn--primary'
+        />
       </div>
       <div className={styles.header__img}></div>
     </header>
