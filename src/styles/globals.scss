@@ -34,6 +34,11 @@ body {
   line-height: 1.625rem;
 }
 
+::selection {
+  background: $peach !important;
+  color: $white !important;
+}
+
 // headings
 h1,
 h2,
