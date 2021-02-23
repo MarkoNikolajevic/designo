@@ -3,6 +3,7 @@ import Layout from '../components/Layout/Layout'
 import HomeHeader from '../components/HomeHeader/HomeHeader';
 import ProjectCta from '../components/ProjectCta/ProjectCta';
 import ProcessCard from '../components/ProcessCard/ProcessCard';
+import ContactCta from '../components/ContactCta/ContactCta';
 
 export default function Home() {
   return (
@@ -40,6 +41,9 @@ export default function Home() {
             imgBgClass='to_top_bg'
           />
         </div>
+      </section>
+      <section>
+        <ContactCta />
       </section>
     </Layout>
   );
