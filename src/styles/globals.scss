@@ -150,6 +150,20 @@ section {
   }
 }
 
+.processCard__grid {
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: 1fr;
+
+  @media screen and (min-width: $mediumViewport) {
+    gap: 2rem;
+  }
+
+  @media screen and (min-width: $largeViewport) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 #web {
   background-image: url('/assets/home/mobile/image-web-design.jpg');
 
@@ -189,14 +203,14 @@ section {
   }
 }
 
-.canada_bg {
+.to_top_bg {
   background: linear-gradient(to top, $locationImgBg);
 }
 
-.australia_bg {
+.to_left_bg {
   background: linear-gradient(to left, $locationImgBg);
 }
 
-.uk_bg {
+.to_bottom_bg {
   background: linear-gradient(to bottom, $locationImgBg);
 }
