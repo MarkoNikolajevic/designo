@@ -1,12 +1,12 @@
 import styles from '../styles/Home.module.scss'
-import Layout from '../components/Layout/Layout'
+import { Fragment } from 'react';
 import HomeHeader from '../components/HomeHeader/HomeHeader';
 import ProjectCta from '../components/ProjectCta/ProjectCta';
 import ProcessCard from '../components/ProcessCard/ProcessCard';
 
 export default function Home() {
   return (
-    <Layout>
+    <Fragment>
       <HomeHeader />
       <section>
         <div className={`${styles.home__projectCta__grid} container`}>
@@ -41,6 +41,6 @@ export default function Home() {
           />
         </div>
       </section>
-    </Layout>
+    </Fragment>
   );
 }

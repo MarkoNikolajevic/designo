@@ -129,18 +129,6 @@ section {
 
 .active {
   font-weight: 500;
-  position: relative;
-
-  &::after {
-    background: linear-gradient(90deg, $lightPeach, $peach);
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    border-radius: 0.5rem;
-  }
 }
 
 .processCard__grid {
