@@ -9,7 +9,7 @@ export default function Home() {
     <Layout>
       <HomeHeader />
       <section>
-        <div className='container projectCta__grid'>
+        <div className={`${styles.home__projectCta__grid} container`}>
           <ProjectCta id='web' link='/web-design' title='Web design' />
           <ProjectCta id='app' link='/app-design' title='App design' />
           <ProjectCta

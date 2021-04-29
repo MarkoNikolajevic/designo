@@ -142,18 +142,6 @@ section {
     border-radius: 0.5rem;
   }
 }
-.projectCta__grid {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: 1fr;
-
-  @media screen and (min-width: $largeViewport) {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      'web app'
-      'web graphic';
-  }
-}
 
 .processCard__grid {
   display: grid;
