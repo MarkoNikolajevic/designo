@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import styles from './ProcessCard.module.scss';
 
 const ProcessCard = (props: {
@@ -7,20 +6,16 @@ const ProcessCard = (props: {
   processImg: string;
   imgBgClass: string;
 }) => {
-  const [process] = useState(props.process);
-  const [description] = useState(props.description);
-  const [processImg] = useState(props.processImg);
-  const [imgBgClass] = useState(props.imgBgClass);
 
   return (
     <div className={styles.card}>
       <div>
-        <div className={`${styles.card__imgBg} ${imgBgClass}`}></div>
-        <img src={`${processImg}`} alt={`${process}`} />
+        <div className={`${styles.card__imgBg} ${props.imgBgClass}`}></div>
+        <img src={props.processImg} alt={props.process} />
       </div>
       <div className={styles.card__text}>
-        <h3>{`${process}`}</h3>
-        <p>{`${description}`}</p>
+        <h3>{props.process}</h3>
+        <p>{props.description}</p>
       </div>
     </div>
   );

@@ -1,8 +1,12 @@
+import InnerPageHeader from '../components/InnerPageHeader/InnerPageHeader';
+
 export default function WebDesign() {
   return (
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, magni.
-      Alias nihil eius ipsum sequi consequuntur libero nesciunt temporibus?
-    </div>
+    <>
+      <InnerPageHeader
+        title='Web design'
+        paragraph='We build websites that serve as powerful marketing tools and bring memorable brand experiences.'
+      />
+    </>
   );
 }

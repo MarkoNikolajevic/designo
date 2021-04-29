@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Link from 'next/link';
 import styles from './Button.module.scss';
 import { motion } from 'framer-motion';
@@ -8,18 +7,15 @@ const Button = (props: {
   label: string;
   buttonClass?: string;
 }) => {
-  const [link] = useState(props.link);
-  const [label] = useState(props.label);
-  const [buttonClass] = useState(props.buttonClass);
 
   return (
     <motion.button
-      className={`${styles.btn} ${buttonClass}`}
+      className={`${styles.btn} ${props.buttonClass}`}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
     >
-      <Link href={`${link}`}>
-        <a target='_blank'>{`${label}`}</a>
+      <Link href={props.link}>
+        <a target='_blank'>{props.label}</a>
       </Link>
     </motion.button>
   );
