@@ -198,3 +198,22 @@ section {
 #processCard-section {
   padding-bottom: 0;
 }
+// inner pages
+.innerPage__header {
+  background: $peach;
+  padding: 6.5625rem 1.5rem;
+  text-align: center;
+  color: $white;
+
+  @media screen and (min-width: $mediumViewport) {
+    padding: 4rem 0;
+  }
+
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  @media screen and (min-width: $mediumViewport) {
+    border-radius: 0.5rem;
+  }
+}

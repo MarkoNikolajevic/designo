@@ -1,8 +1,12 @@
+import InnerPageHeader from '../components/InnerPageHeader/InnerPageHeader';
+
 export default function GraphicDesign() {
   return (
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, magni.
-      Alias nihil eius ipsum sequi consequuntur libero nesciunt temporibus?
-    </div>
+    <>
+      <InnerPageHeader
+        title='Graphic Design'
+        paragraph='We deliver eye-catching branding materials that are tailored to meet your business objectives.'
+      />
+    </>
   );
 }

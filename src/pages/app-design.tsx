@@ -1,8 +1,12 @@
+import InnerPageHeader from '../components/InnerPageHeader/InnerPageHeader';
+
 export default function AppDesign() {
   return (
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, magni.
-      Alias nihil eius ipsum sequi consequuntur libero nesciunt temporibus?
-    </div>
+    <>
+      <InnerPageHeader
+        title='App Design'
+        paragraph='Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.'
+      />
+    </>
   );
 }
