@@ -15,11 +15,15 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  transform: translateY(50%);
+  z-index: 1;
+  position: relative;
 
   @media screen and (min-width: $mediumViewport) {
     margin: 0 2.5rem;
     border-radius: 0.5rem;
     padding: 3.75rem;
+    transform: translateY(5.25rem);
   }
 
   @media screen and (min-width: $largeViewport) {
@@ -29,6 +33,7 @@
     text-align: left;
     flex-direction: row;
     justify-content: space-between;
+    transform: translateY(4.5rem);
   }
 
   &__text {

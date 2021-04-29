@@ -10,6 +10,11 @@
 
   @media screen and (min-width: $mediumViewport) {
     text-align: left;
+    padding: 10.375rem 0 5rem;
+    }
+
+    @media screen and (min-width: $largeViewport) {
+      padding: 9rem 0 4.5rem;
   }
 
   &__firstRow,
