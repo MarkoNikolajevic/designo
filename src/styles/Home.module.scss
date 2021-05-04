@@ -4,8 +4,12 @@
   display: grid;
   gap: 1.5rem;
   grid-template-columns: 1fr;
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
 
   @media screen and (min-width: $largeViewport) {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       'web app'
