@@ -1,0 +1,51 @@
+@import '../../styles/variables';
+
+.card {
+  border-radius: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  background: $cardBg;
+
+  @media screen and (min-width: $mediumViewport) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: $largeViewport) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    max-width: 100%;
+    border-top-left-radius: 0.9375rem;
+    border-top-right-radius: 0.9375rem;
+
+    @media screen and (min-width: $mediumViewport) {
+      border-bottom-left-radius: 0.9375rem;
+      border-top-right-radius: 0;
+    }
+
+    @media screen and (min-width: $largeViewport) {
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 0.9375rem;
+    }
+  }
+
+  &__text {
+    padding: 2rem 1.875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    @media screen and (min-width: $mediumViewport) {
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    color: $peach;
+    margin-bottom: 1rem;
+  }
+}
