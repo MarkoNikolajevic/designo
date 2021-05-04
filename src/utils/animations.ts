@@ -3,6 +3,7 @@ export const navVariants = {
   open: {
     opacity: 1,
     height: '14.6875rem',
+    display: 'flex',
     transition: {
       duration: 0.3,
       staggerChildren: 0.07,
@@ -12,13 +13,14 @@ export const navVariants = {
   closed: {
     opacity: 0,
     height: 0,
+    display: 'none',
     transition: {
       staggerChildren: 0.05,
       staggerDirection: -1,
       when: 'afterChildren',
     },
   },
-}
+};;
 
 export const navItemVariants = {
   open: {
