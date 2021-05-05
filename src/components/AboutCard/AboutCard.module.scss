@@ -1,7 +1,7 @@
 @import '../../styles/variables';
 
-.header {
-  background: $peach;
+.card {
+  background: $cardBg;
   padding: 0;
   text-align: center;
   color: $white;
@@ -10,8 +10,10 @@
 
   picture,
   img {
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+    @media screen and (min-width: $mediumViewport) {
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    }
   }
 
   img {
@@ -19,25 +21,21 @@
 
     @media screen and (min-width: $largeViewport) {
       height: 100%;
-      border-top-left-radius: 0;
-      border-bottom-right-radius: 0.5rem;
+      border-bottom-left-radius: 0.5rem;
+      border-top-right-radius: 0;
     }
   }
 
   @media screen and (min-width: $mediumViewport) {
-    margin: 0 2.5rem;
+    margin: 7.5rem 2.5rem 0;
     border-radius: 0.5rem;
   }
 
   @media screen and (min-width: $largeViewport) {
     width: 70rem;
-    margin: auto;
+    margin: 10rem auto 0;
     text-align: left;
-    grid-template-columns: 3fr 2fr;
-
-    &__img_wrapper {
-      order: 2;
-    }
+    grid-template-columns: 2fr 3fr;
   }
 
   &__text {
@@ -48,16 +46,20 @@
     }
 
     @media screen and (min-width: $largeViewport) {
-      order: 1;
       padding: 8.4375rem 5.125rem;
     }
   }
 
   &__title {
+    color: $peach;
     margin-bottom: 1.5rem;
 
     @media screen and (min-width: $mediumViewport) {
       margin-bottom: 2rem;
     }
+  }
+
+  &__paragraph {
+    color: $darkGrey;
   }
 }

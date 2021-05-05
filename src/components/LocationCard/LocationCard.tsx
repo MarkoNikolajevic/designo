@@ -15,7 +15,7 @@ const LocationCard = (props: {
       <h3>{props.location}</h3>
       <Button
         link={props.link}
-        label='See the location'
+        label='See location'
         buttonClass='btn btn--secondary'
       />
     </div>

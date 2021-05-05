@@ -13,7 +13,10 @@ const AboutUsHeader = () => {
             media='(min-width:48rem)'
             srcSet='/assets/about/tablet/image-about-hero.jpg'
           />
-          <img src='/assets/about/mobile/image-about-hero.jpg' alt='' />
+          <img
+            src='/assets/about/mobile/image-about-hero.jpg'
+            alt='Team work photo from above'
+          />
         </picture>
       </div>
       <div className={styles.header__text}>
