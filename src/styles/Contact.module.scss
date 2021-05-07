@@ -7,8 +7,9 @@
   gap: 3rem;
 
   @media screen and (min-width: $largeViewport) {
-    margin-top: 10rem;
+    margin: 10rem auto 0;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.875rem;
+    width: 70rem;
   }
 }

@@ -1,9 +1,11 @@
 import styles from '../styles/Contact.module.scss';
+import ContactHeader from '../components/ContactHeader/ContactHeader';
 import LocationCard from '../components/LocationCard/LocationCard';
 
 export default function Contact() {
   return (
     <>
+      <ContactHeader />
       <section className={styles.contact__grid}>
         <LocationCard
           link='/locations/#canada'
