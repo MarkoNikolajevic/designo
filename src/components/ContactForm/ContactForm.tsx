@@ -1,10 +1,10 @@
 import { useForm } from 'react-hook-form';
 import styles from './ContactForm.module.scss';
 
-type InputsType = {
+interface IFormType {
   name: string;
   email: string;
-  phone: number;
+  phone: string;
   message: string;
 };
 
@@ -12,15 +12,25 @@ const ContactForm = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
-  } = useForm<InputsType>();
+  } = useForm<IFormType>();
+  const onSubmit = (data: IFormType) => {
+    console.log(data);
+    reset({
+      name: '',
+      email: '',
+      phone: '',
+      message: '',
+    });
+  };
 
   return (
-    <form className={styles.form}>
+    <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
       <input
         name='name'
         type='text'
-        {...register('name', { required: true })}
+        {...register('name', { required: true, pattern: /^[A-Za-z]+$/i })}
         aria-label='name'
         placeholder='Name'
       />
