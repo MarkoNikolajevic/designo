@@ -8,6 +8,11 @@
   text-align: center;
   color: $darkGrey;
 
+  @media screen and (min-width: $mediumViewport) {
+    padding: 5.5rem 4.75rem;
+    text-align: left;
+  }
+
   &__title {
     color: $peach;
     margin-bottom: 1.5rem;
@@ -17,6 +22,9 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    @media screen and (min-width: $mediumViewport) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   &__info {
