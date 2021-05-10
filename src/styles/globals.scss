@@ -217,3 +217,17 @@ ul {
     border-radius: 0.5rem;
   }
 }
+.error {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-style: italic;
+  font-size: 0.75rem;
+  line-height: 1.625rem;
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-left: 0.5rem;
+  }
+}
