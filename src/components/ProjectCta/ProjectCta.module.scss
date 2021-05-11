@@ -7,6 +7,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
 
   &__overlay {
     padding: 5.625rem 2.25rem;
@@ -30,5 +31,8 @@
     font-size: 0.9375rem;
     letter-spacing: 5px;
     text-transform: uppercase;
+    img {
+      margin-left: 1.25rem;
+    }
   }
 }
