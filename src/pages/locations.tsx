@@ -1,10 +1,14 @@
+import styles from '../styles/Locations.module.scss';
+import Image from 'next/image';
 import LocationAddress from '../components/LocationAddress/LocationAddress';
 
 export default function Locations() {
   return (
-    <div>
-      <div>
-        <div>
+    <section className={`${styles.locations} container`}>
+      <div className={styles.locations__grid} id='canada'>
+        <div
+          className={`${styles.locations__img_wrapper} ${styles.locations__canada}`}
+        >
           <picture>
             <source
               media='(min-width:75rem)'
@@ -25,8 +29,10 @@ export default function Locations() {
           mail='contact@designo.co'
         />
       </div>
-      <div>
-        <div>
+      <div className={styles.locations__grid} id='australia'>
+        <div
+          className={`${styles.locations__img_wrapper} ${styles.locations__australia}`}
+        >
           <picture>
             <source
               media='(min-width:75rem)'
@@ -34,7 +40,7 @@ export default function Locations() {
             />
             <img
               src='/assets/locations/tablet/image-map-australia.png'
-              alt='Australia office map'
+              alt='Canada office map'
             />
           </picture>
         </div>
@@ -47,8 +53,10 @@ export default function Locations() {
           mail='contact@designo.au'
         />
       </div>
-      <div>
-        <div>
+      <div className={styles.locations__grid} id='united-kingdom'>
+        <div
+          className={`${styles.locations__img_wrapper} ${styles.locations__uk}`}
+        >
           <picture>
             <source
               media='(min-width:75rem)'
@@ -56,7 +64,7 @@ export default function Locations() {
             />
             <img
               src='/assets/locations/tablet/image-map-uk.png'
-              alt='United Kingdom office map'
+              alt='Canada office map'
             />
           </picture>
         </div>
@@ -69,6 +77,6 @@ export default function Locations() {
           mail='contact@designo.uk'
         />
       </div>
-    </div>
+    </section>
   );
 }
