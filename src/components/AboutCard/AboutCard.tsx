@@ -8,15 +8,13 @@ const AboutCard = (props: {
   imgMedium: string;
   imgLarge: string;
   altText: string;
-  id?: string;
+  cardClass?: string;
 }) => {
   return (
     <section
-      className={`${styles.card} container ${
-        props.id === 'real-deal' ? 'card--inverted' : ''
-      }`}
+      className={`${styles.card} container`}
     >
-      <div className={styles.card__img_wrapper}>
+      <div className={`${styles.card__img_wrapper} ${props.cardClass}`}>
         <picture>
           <source media='(min-width:75rem)' srcSet={props.imgLarge} />
           <source media='(min-width:48rem)' srcSet={props.imgMedium} />

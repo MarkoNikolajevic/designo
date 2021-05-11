@@ -231,3 +231,8 @@ ul {
     margin-left: 0.5rem;
   }
 }
+@media screen and (min-width: $largeViewport) {
+  .real-deal {
+    order: 2;
+  }
+}

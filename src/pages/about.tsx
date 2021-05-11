@@ -44,7 +44,7 @@ export default function About() {
         imgMedium='/assets/about/tablet/image-real-deal.jpg'
         imgLarge='/assets/about/desktop/image-real-deal.jpg'
         altText='Hanging a picture on the wall'
-        id='real-deal'
+        cardClass='real-deal'
       />
     </>
   );
