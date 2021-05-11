@@ -20,6 +20,9 @@ const LocationAddress = (props: {
           <p className={styles.location__info}>{props.city}</p>
         </div>
         <div>
+          <p className={styles.location__info}>
+            <strong>Contact</strong>
+          </p>
           <p className={styles.location__info}>P: {props.phone}</p>
           <p className={styles.location__info}>M: {props.mail}</p>
         </div>

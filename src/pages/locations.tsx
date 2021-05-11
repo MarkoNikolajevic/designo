@@ -4,7 +4,18 @@ export default function Locations() {
   return (
     <div>
       <div>
-        <div>maps</div>
+        <div>
+          <picture>
+            <source
+              media='(min-width:75rem)'
+              srcSet='/assets/locations/desktop/image-map-canada.png'
+            />
+            <img
+              src='/assets/locations/tablet/image-map-canada.png'
+              alt='Canada office map'
+            />
+          </picture>
+        </div>
         <LocationAddress
           nation='Canada'
           office='Designo Central Office'
@@ -15,7 +26,18 @@ export default function Locations() {
         />
       </div>
       <div>
-        <div>maps</div>
+        <div>
+          <picture>
+            <source
+              media='(min-width:75rem)'
+              srcSet='/assets/locations/desktop/image-map-australia.png'
+            />
+            <img
+              src='/assets/locations/tablet/image-map-australia.png'
+              alt='Australia office map'
+            />
+          </picture>
+        </div>
         <LocationAddress
           nation='Australia'
           office='Designo AU Office'
@@ -26,7 +48,18 @@ export default function Locations() {
         />
       </div>
       <div>
-        <div>maps</div>
+        <div>
+          <picture>
+            <source
+              media='(min-width:75rem)'
+              srcSet='/assets/locations/desktop/image-map-united-kingdom.png'
+            />
+            <img
+              src='/assets/locations/tablet/image-map-uk.png'
+              alt='United Kingdom office map'
+            />
+          </picture>
+        </div>
         <LocationAddress
           nation='United Kingdom'
           office='Designo UK Office'
