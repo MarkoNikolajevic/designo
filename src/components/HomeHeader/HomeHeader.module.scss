@@ -6,9 +6,10 @@
   text-align: center;
   background-color: $peach;
   background-image: url('/assets/home/desktop/bg-pattern-hero-home.svg');
-  background-position: center right;
+  background-position: left 6.375rem;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  overflow: hidden;
 
   @media screen and (min-width: $mediumViewport) {
     margin: 0 2.5rem;
@@ -32,6 +33,16 @@
 
     @media screen and (min-width: $largeViewport) {
       margin: 0.75rem 0 2.5rem;
+    }
+  }
+  &__img {
+    display: flex;
+    justify-content: center;
+    height: 30rem;
+    margin-top: -5rem;
+
+    div {
+      flex: 0 0 auto;
     }
   }
 }

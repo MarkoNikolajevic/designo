@@ -1,4 +1,5 @@
 import styles from './HomeHeader.module.scss';
+import Image from 'next/image';
 import Button from '../Button/Button';
 
 const HomeHeader = () => {
@@ -19,7 +20,15 @@ const HomeHeader = () => {
           buttonClass='btn btn--primary'
         />
       </div>
-      <div className={styles.header__img}></div>
+      <div className={styles.header__img} aria-hidden='true'>
+        <Image
+          src='/assets/home/desktop/image-hero-phone.png'
+          alt=''
+          layout='fixed'
+          width={624}
+          height={913}
+        />
+      </div>
     </header>
   );
 };
