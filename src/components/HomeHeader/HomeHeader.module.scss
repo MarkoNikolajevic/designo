@@ -15,6 +15,7 @@
     margin: 0 2.5rem;
     border-radius: 0.5rem;
     padding: 3.75rem;
+    background-position: 10.625rem 6.375rem;
   }
 
   @media screen and (min-width: $largeViewport) {
@@ -22,6 +23,10 @@
     margin: auto;
     padding: 9.0625rem 5.9375rem;
     text-align: left;
+    background-position: right center;
+    background-size: contain;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
   }
 
   &__paragraph {
@@ -43,6 +48,11 @@
 
     div {
       flex: 0 0 auto;
+    }
+    @media screen and (min-width: $largeViewport) {
+      position: absolute;
+      right: 0;
+      margin-top: -10rem;
     }
   }
 }

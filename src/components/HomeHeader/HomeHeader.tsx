@@ -27,6 +27,7 @@ const HomeHeader = () => {
           layout='fixed'
           width={624}
           height={913}
+          priority={true}
         />
       </div>
     </header>
