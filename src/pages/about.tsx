@@ -16,7 +16,7 @@ export default function About() {
         imgLarge='/assets/about/desktop/image-world-class-talent.jpg'
         altText='Girl looking pictures on the wall'
       />
-      <section className={styles.about__grid}>
+      <section className={`${styles.about__grid} container`}>
         <LocationCard
           link='/locations/#canada'
           location='Canada'
