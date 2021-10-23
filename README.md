@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - [Project on Github](https://github.com/MarkoNikolajevic/designo)
-- [Live site](https://designo-software-agency.vercel.app/)
+- [Live site](https://designo-eight.vercel.app/)
 
 ## My process
 
