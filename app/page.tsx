@@ -1,11 +1,10 @@
-import { Typography1 } from '@/components/ui/Typography';
-
-export default function Home() {
+const Home = () => {
   return (
-    <main className='bg-grey-900'>
-      <div className='text-grey-100'>
-        <Typography1>Design App</Typography1>
-      </div>
+    <main>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quos
+      maiores, assumenda sunt incidunt laborum voluptas provident!
     </main>
   );
-}
+};
+
+export default Home;
