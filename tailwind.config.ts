@@ -20,7 +20,16 @@ const config: Config = {
         500: '#E7816B',
       },
     },
-    extend: {}
+    extend: {
+      fontSize: {
+        '4.5xl': ['2.5rem', {
+          lineHeight: '3rem'
+        }]
+      },
+      lineHeight: {
+        '6.5': '1.625rem' // 26px,
+      }
+    }
   },
   plugins: [],
 };
